@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>搭建你的第一个站点 - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u642d\u5efa\u4f60\u7684\u7b2c\u4e00\u4e2a\u7ad9\u70b9";
+    var mkdocs_page_input_path = "\u642d\u5efa\u4f60\u7684\u7b2c\u4e00\u4e2a\u7ad9\u70b9.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">简介</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../安装 MkDocs/">安装 MkDocs</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">搭建你的第一个站点</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">新建项目</a></li>
+    
+
+    <li class="toctree-l2"><a href="#_2">启动服务</a></li>
+    
+
+    <li class="toctree-l2"><a href="#_3">添加页面</a></li>
+    
+
+    <li class="toctree-l2"><a href="#_4">生成站点</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../将站点发布到网络上/">发布站点</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">用户指南</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../user-guide/setting-multiple-directories/">文档布局</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>搭建你的第一个站点</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">新建项目</h1>
+<p>首先选择好将项目文件储存在哪个磁盘，然后在该磁盘路径下执行命令。比如，想要把项目文件都放在 E 盘的话，就在 E 盘路径下执行以下命令：</p>
+<pre><code>mkdocs new my-project
+</code></pre>
+
+<p>这里的<code>my-project</code>即为你的项目名称，如果你的项目名称为<code>my-blog</code>，就可以执行<code>mkdocs new my-blog</code>命令。</p>
+<p>结果如下：</p>
+<p><img alt="图片" src="../新建项目1.png" /></p>
+<p>最后生成了一个名为<code>my-project</code>的文件夹，如下图所示：</p>
+<p><img alt="图片" src="../新建项目2.png" /></p>
+<p>下面解释下<code>my-project</code>文件夹中每个文件的作用：</p>
+<ul>
+<li><code>mkdocs.yml</code>：此为配置文件，文档的结构、主题都可以在此设置。</li>
+<li><code>docs</code>文件夹：撰写的 Markdown 文档都放在这个文件夹内。</li>
+<li><code>index.md</code>：默认首页。</li>
+</ul>
+<p>到此，一个新项目就创建好了~</p>
+<h1 id="_2">启动服务</h1>
+<p>MkDocs 包含了一个内建的服务器，可以在本地预览当前文档。在项目文件夹下打开命令提示符，执行<code>mkdocs serve</code>命令就可以启动内建服务器，比如，之前在 E 盘新建了项目<code>my-project</code>，则在<code>my-project</code>路径下执行<code>mkdocs serve</code>就行，如下图：</p>
+<p><img alt="图片" src="../启动服务1.png" /></p>
+<p>执行成功后，在浏览器打开 <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>,就可以看到页面的样子啦！如下图：</p>
+<p><img alt="图片" src="../启动服务2.png" /></p>
+<p>此时页面上所展示的内容就是<code>index.md</code>里默认的首页内容，可以自行更改~我们来修改一下看看效果。首先在<code>index.md</code>里添加一些内容并保存，如下图：</p>
+<p><img alt="图片" src="../更改页面.png" /></p>
+<p>然后 <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> 会自动刷新，就可以看到修改后的结果啦！</p>
+<p><img alt="图片" src="../更改页面2.png" /></p>
+<h1 id="_3">添加页面</h1>
+<p>现在添加第二个页面。这一步其实非常简单，只需要将你撰写好的 Markdown 文档，放到<code>docs</code>文件夹下即可。这里，我用了一个<code>test.md</code>文件作为测试，把它放在了<code>docs</code>文件夹下。</p>
+<p><img alt="图片" src="../添加页面.png" /></p>
+<p>这时 <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> 已经自动刷新可以看见效果了：</p>
+<p><img alt="图片" src="../添加页面2.png" /></p>
+<p>但是这个页面还比较潦草，我们可以简单配置一下。打开<code>mkdocs.yml</code>配置文件，更改如下：</p>
+<pre><code>site_name: 我的第一个站点
+
+nav:
+  - 首页: index.md  
+  - 测试页: test.md
+</code></pre>
+
+<p><code>site_name</code>为站点名称，<code>nav</code>用来设置导航栏，一行代表一个导航，其语法格式为<code>- 导航名称: 对应的 Markdown 文件</code>。</p>
+<p>将更改保存后，再来看一下效果吧~</p>
+<p><img alt="图片" src="../添加页面3.png" /></p>
+<p>可以看到站点名称和导航栏名称都已经按照我们的设置更改了。你可以按照上述方法，将自己撰写的 Markdown 文件依次添加到站点里，这样，一个网站就初步搭建好了。</p>
+<h1 id="_4">生成站点</h1>
+<p>在<code>my-project</code>路径下，打开命令提示符执行<code>mkdocs build</code>命令，如下图：</p>
+<p><img alt="图片" src="../生成站点.png" /></p>
+<p>完成后，<code>my-project</code>下会多一个<code>site</code>文件夹，生成的<code>html</code>文件就全在里面啦。但是注意，<code>site</code>里面的文件在本地是不能正常跳转的，需要部署上线才能正常运行。</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../将站点发布到网络上/" class="btn btn-neutral float-right" title="发布站点">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../安装 MkDocs/" class="btn btn-neutral" title="安装 MkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../安装 MkDocs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../将站点发布到网络上/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

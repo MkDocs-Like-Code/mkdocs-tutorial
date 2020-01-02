@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>文档布局 - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u6587\u6863\u5e03\u5c40";
+    var mkdocs_page_input_path = "user-guide\\setting-multiple-directories.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">简介</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../安装 MkDocs/">安装 MkDocs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../搭建你的第一个站点/">搭建你的第一个站点</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../将站点发布到网络上/">发布站点</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">用户指南</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">文档布局</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">文档布局</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#_2">初始结构</a></li>
+        
+            <li><a class="toctree-l4" href="#_3">如何设置多级目录</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>用户指南 &raquo;</li>
+        
+      
+    
+    <li>文档布局</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">文档布局</h1>
+<h2 id="_2">初始结构</h2>
+<p>文档是普通的 <code>Markdown</code> 文件, 放到项目目录里. 通常目录以 <code>docs</code> 命名, 和 <code>mkdocs.yml</code> 配置文件一起放置于项目的顶级目录中.</p>
+<p>最简单的目录结构如下:</p>
+<pre><code>mkdocs.yml
+docs/
+    index.md
+</code></pre>
+
+<p>默认项目主页是 <code>index</code>.</p>
+<p>可以创建多个 markdown 文件以创建多页文档:</p>
+<pre><code>mkdocs.yml
+docs/
+    index.md
+    about.md
+    license.md
+</code></pre>
+
+<p>文档目录结构决定着生成的文档的 <code>URLs</code> . 如果采用如上目录结构, 生成的 URLs 将会如下所示:</p>
+<pre><code>/
+/about/
+/license/
+</code></pre>
+
+<p>你也可以根据需要将 <code>Markdown</code> 文件放到多级目录.</p>
+<pre><code>docs/
+    index.md
+    user-guide/getting-started.md
+    user-guide/configuration-options.md
+    license.md
+</code></pre>
+
+<p>多级目录将生成多级 <code>URLs</code>, 如下所示:</p>
+<pre><code>/
+/user-guide/getting-started/
+/user-guide/configuration-options/
+/license/
+</code></pre>
+
+<h2 id="_3">如何设置多级目录</h2>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../将站点发布到网络上/" class="btn btn-neutral" title="发布站点"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../将站点发布到网络上/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
