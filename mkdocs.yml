@@ -1,9 +1,12 @@
 site_name: My Docs
 theme: readthedocs
-pages:
-    - MkDocs: 
-      - index.md
-      - test.md
-    - 用户指南:
-      - user-guide/setting-multiple-directories.md
+nav:
+  - 简介: index.md
+  - 安装 MkDocs: 安装 MkDocs.md
+  - 搭建你的第一个站点: 搭建你的第一个站点.md
+  - 发布站点: 将站点发布到网络上.md
+  - 用户指南:
+    - user-guide/setting-multiple-directories.md
+
+    
   
