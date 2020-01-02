@@ -1,0 +1,9 @@
+site_name: My Docs
+theme: readthedocs
+pages:
+    - MkDocs: 
+      - index.md
+      - test.md
+    - 用户指南:
+      - user-guide/setting-multiple-directories.md
+  
