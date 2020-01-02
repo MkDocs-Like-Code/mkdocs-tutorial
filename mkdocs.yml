@@ -5,8 +5,8 @@ nav:
   - 安装 MkDocs: 安装 MkDocs.md
   - 搭建你的第一个站点: 搭建你的第一个站点.md
   - 发布站点: 将站点发布到网络上.md
-  - 用户指南:
-    - user-guide/setting-multiple-directories.md
+  - MkDocs 进阶操作:
+    - MkDocs 进阶操作/files-layout.md
 
     
   
