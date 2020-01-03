@@ -21,7 +21,8 @@
     - 更改主题
     - 自定义主题
 - 附录
-  - Git Bash
+  - YAML 简介
+  - Git
   - GitHub for Desktop
   - Markdown 语法
 - Troubleshooting （待定）
