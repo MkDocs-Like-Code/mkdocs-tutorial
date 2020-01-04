@@ -1,5 +1,7 @@
 site_name: MkDocs 文档开发教程
-theme: readthedocs
+#theme: readthedocs
+theme: rtd-dropdown
+
 nav:
   - 简介: index.md
   - Mkdocs 入门:
