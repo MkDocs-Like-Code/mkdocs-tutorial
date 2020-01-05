@@ -14,8 +14,11 @@ nav:
   - 附录:
     - 附录/YAML 简介.md
     - 附录/Git.md
-    - 附录/GitHub for Desktop.md
+    - 附录/Git Desktop.md
     - 附录/Markdown 语法.md
+
+markdown_extensions:
+  - toc:
 
 
     
