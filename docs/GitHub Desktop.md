@@ -49,7 +49,7 @@ GitHub Desktop 可以很方便地管理本地和远程仓库，如果你刚刚�
 ## 拉取远程改动到本地仓库
 如果在远程仓库更新了东西，但是还没有同步到本地仓库，也可以用 GitHub Desktop 进行拉取同步。
 
-在`Cureent repository`选择你想要同步的仓库，点击右上角`Fetch origin`。
+在`Current repository`选择你想要同步的仓库，点击右上角`Fetch origin`。
 
 ![图片](new9.png)
 
