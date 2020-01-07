@@ -1,13 +1,13 @@
 site_name: MkDocs 文档开发教程
-#theme: readthedocs
-theme: rtd-dropdown
+theme: readthedocs
+#theme: rtd-dropdown
 
 nav:
   - 简介: index.md
   - Mkdocs 入门:
-    - 安装 MkDocs: 安装 MkDocs.md
-    - 创建你的第一个项目: 创建你的第一个项目.md
-    - 发布站点: 将站点发布到网络上.md
+    - 安装 MkDocs: get started/install-MkDocs.md
+    - 创建你的第一个项目: get started/create-your-first-program.md
+    - 发布站点: get started/deploy.md
   - MkDocs 进阶操作:
     - MkDocs 进阶操作/主题配置.md
     - MkDocs 进阶操作/文档布局.md
@@ -15,7 +15,7 @@ nav:
     - 附录/YAML 简介.md
     - 附录/Git.md
     - 附录/GitHub Desktop.md
-    - 附录/Markdown 语法.md
+    - 附录/Markdown.md
 
 markdown_extensions:
   - toc:
