@@ -23,7 +23,7 @@
 - 附录
   - YAML 简介
   - Git
-  - GitHub for Desktop
+  - GitHub Desktop
   - Markdown 语法
 - Troubleshooting （待定）
   - nav 和 pages 的区别

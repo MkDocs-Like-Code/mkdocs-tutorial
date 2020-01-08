@@ -122,9 +122,12 @@ git push -u origin master # 推送到远程库的 master 分支
 ## Git 其他命令
 
 - 查看远程仓库 `git remote -v`
-- 把远程库更新到本地 `git fetch origin master`
+<br>
+- 远端抓取 `git fetch`
+- 与本地当前branch合并 `git merge origin master`
+- 把远程库更新到本地 `git pull origin master` # 相当于
+<br>
 - 比较远程更新和本地版本库的差异 `git log master.. origin master`
-- 合并远程库 `git merge origin master`
 
 - 想要在github上面删除，但又不想在本地删除文件
 `git rm -r --cached .idea  #--cached 不会把本地的.idea删除`
