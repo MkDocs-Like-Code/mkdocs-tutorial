@@ -10,9 +10,9 @@
     - 本地预览
   - 发布
     - Github Pages
+    - readthedocs
       - Gitbash
       - GitHub Desktop
-    - readthedocs
 - MkDocs 进阶操作
   - 文档布局
     - 初始目录
