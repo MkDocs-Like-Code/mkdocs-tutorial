@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>在技术文档写作中使用 GitHub Desktop - MkDocs 文档开发教程</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u5728\u6280\u672f\u6587\u6863\u5199\u4f5c\u4e2d\u4f7f\u7528 GitHub Desktop";
+    var mkdocs_page_input_path = "\u9644\u5f55\\GitHub Desktop.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MkDocs 文档开发教程</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">简介</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Mkdocs 入门</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../get-started/install-MkDocs/">安装 MkDocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../get-started/create-your-first-program/">创建你的第一个项目</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../get-started/deploy/">发布站点</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">MkDocs 进阶操作</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../MkDocs 进阶操作/主题配置/">主题配置</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../MkDocs 进阶操作/文档布局/">文档布局</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">附录</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../YAML 简介/">YAML 简介</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Git/">在技术文档写作中使用 Git</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">在技术文档写作中使用 GitHub Desktop</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">创建本地仓库</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_2">提交本地改动到远程仓库</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_3">克隆远程仓库到本地</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_4">拉取远程改动到本地仓库</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Markdown/">Markdown 基础语法</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MkDocs 文档开发教程</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>附录 &raquo;</li>
+        
+      
+    
+    <li>在技术文档写作中使用 GitHub Desktop</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>GitHub Desktop 可以很方便地管理本地和远程仓库，如果你刚刚接触 GitHub、 同时对 Git Bash 等命令行工具又很陌生的话，GitHub Desktop 就是一个非常适合的选择了。</p>
+<p>开始学习本教程之前，需要先注册 GitHub 账号，并安装 GitHub Desktop，注册和安装过程就不过多赘述了，小伙伴们可以自行前往官网<a href="https://github.com/">注册账号</a>、<a href="https://desktop.github.com/">下载 GitHub Desktop</a>。</p>
+<h2 id="_1">创建本地仓库</h2>
+<p>首先打开 GitHub Desktop，点击左上角<code>File</code>-&gt;<code>New repository</code>。</p>
+<p><img alt="图片" src="../new.png" /></p>
+<p><code>Name</code>即仓库名称，由你自己决定仓库叫什么，这里我创建了一个名为<code>test</code>的仓库；<code>Local path</code>为仓库存储地址，也是由你自己选择，这里我将仓库存在了<code>E</code>盘。信息填写完毕后，点击<code>Create repository</code>。</p>
+<p><img alt="图片" src="../new2.png" /></p>
+<p>然后打开刚刚的存储路径（因为我刚刚存储在了<code>E</code>盘，所以打开<code>E</code>盘就行），就能看见新建的本地仓库了。</p>
+<p><img alt="图片" src="../new3.png" /></p>
+<p>本地仓库里会自动生成一个文件<code>.gitattributes</code>文本文件，用来存储配置信息。这里我们不做教学，如果感兴趣的话可以上网搜索一下~~在初学时可以先不管这个文件，不会有任何影响。</p>
+<h2 id="_2">提交本地改动到远程仓库</h2>
+<p>本地仓库有了任何改动，比如新建了文件、文件有了更改，又或者删除了不需要的文件，GitHub Desktop 都可以识别并显示出来，你可以选择将这些改动提交到远程仓库，即提交到云端。下面我们来做个演示：</p>
+<p>首先，在本地仓库里新建一个文件，这里我创建了一个<code>test.txt</code>文件：</p>
+<p><img alt="图片" src="../new4.png" /></p>
+<p>然后打开 GitHub Desktop，可以看到<code>test.txt</code>文件显示在了更改里。然后简单为此次改动填写一下备注信息，如图中的<code>update</code>，点击<code>commit to master</code>。</p>
+<p><img alt="图片" src="../new5.png" /></p>
+<p>注意，此时并没有真正将改动推送到远程仓库，还要再点击右上角的<code>Publish repository</code>后才算大功告成。<strong>（注：因为这是新建的本地仓库，云端没有，所以是<code>Publish repository</code>；如果云端已经有了这个仓库，显示的文字会是<code>Push origin</code>，操作一致。）</strong></p>
+<p><code>Keep this code private</code>是选择将库公开还是设为私密状态，一般个人的库选择公开开源的比较多。然后点击<code>Publish repository</code>。<strong>（注：因为这是新建的本地仓库，云端没有，所以会多这一步；如果云端已经有了这个仓库，提交改动时就不会有这一步了。）</strong></p>
+<p><img alt="图片" src="../new6.png" /></p>
+<p>此时，到自己的 <a href="https://github.com/">GitHub 主页</a>可以查看到最新推送上去的仓库。</p>
+<h2 id="_3">克隆远程仓库到本地</h2>
+<p><code>Clone</code>可以简单地理解为将储存在云端、同时本地又没有的远程仓库下载到本地。方法为：打开 GitHub Desktop，点击<code>File</code>-&gt;<code>Clone repository</code>。</p>
+<p><img alt="图片" src="../new7.png" /></p>
+<p>选择想要克隆的仓库，并填好存储地址。这里我选择克隆提前建立好的名为<code>test2</code>的仓库，存在<code>E</code>盘，然后点击<code>Clone</code>。克隆完成后，打开<code>E</code>盘即可看见刚刚克隆到本地的<code>test2</code>仓库。</p>
+<p><img alt="图片" src="../new8.png" /></p>
+<h2 id="_4">拉取远程改动到本地仓库</h2>
+<p>如果在远程仓库更新了东西，但是还没有同步到本地仓库，也可以用 GitHub Desktop 进行拉取同步。</p>
+<p>在<code>Current repository</code>选择你想要同步的仓库，点击右上角<code>Fetch origin</code>。</p>
+<p><img alt="图片" src="../new9.png" /></p>
+<p>如果远程仓库有更新的话，会显示出来，如下图，点击<code>Pull origin</code>即可将远程更新的内容下载到本地。</p>
+<p><img alt="图片" src="../new10.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Markdown/" class="btn btn-neutral float-right" title="Markdown 基础语法">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Git/" class="btn btn-neutral" title="在技术文档写作中使用 Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Git/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Markdown/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

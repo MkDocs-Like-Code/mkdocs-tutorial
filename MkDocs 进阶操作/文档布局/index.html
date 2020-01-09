@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>文档布局 - MkDocs 文档开发教程</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u6587\u6863\u5e03\u5c40";
+    var mkdocs_page_input_path = "MkDocs \u8fdb\u9636\u64cd\u4f5c\\\u6587\u6863\u5e03\u5c40.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MkDocs 文档开发教程</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">简介</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Mkdocs 入门</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../get-started/install-MkDocs/">安装 MkDocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../get-started/create-your-first-program/">创建你的第一个项目</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../get-started/deploy/">发布站点</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">MkDocs 进阶操作</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../主题配置/">主题配置</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">文档布局</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">文档布局</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#_2">初始结构</a></li>
+        
+            <li><a class="toctree-l4" href="#_3">如何设置多级目录</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">附录</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../附录/YAML 简介/">YAML 简介</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../附录/Git/">在技术文档写作中使用 Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../附录/GitHub Desktop/">在技术文档写作中使用 GitHub Desktop</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../附录/Markdown/">Markdown 基础语法</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MkDocs 文档开发教程</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>MkDocs 进阶操作 &raquo;</li>
+        
+      
+    
+    <li>文档布局</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">文档布局</h1>
+<h2 id="_2">初始结构</h2>
+<p>在项目文件夹中，初始文档包括：</p>
+<ul>
+<li>
+<p><code>docs</code>文件夹：其中存放着 <code>Markdown</code> 格式的 <code>mkdocs</code> 文档。</p>
+</li>
+<li>
+<p><code>mkdocs.yml</code> ：项目的配置文件。</p>
+</li>
+</ul>
+<p>生成<code>mkdocs</code>项目后，会生成一个最简单的目录结构:</p>
+<pre><code>$ tree
+.
+├── docs
+│   └──index.md
+└── mkdocs.yml
+</code></pre>
+
+<p><code>index</code> 即为默认的项目主页。</p>
+<h2 id="_3">如何设置多级目录</h2>
+<p>我们也可以根据需要生成多级目录，多级目录也要在 <code>mkdocs.yml</code> 中配置。多级目录的语法格式如下：</p>
+<pre><code>- [一级目录名称]:
+    - [子目录名称]:[文件路径/文件名.md]
+    ...
+</code></pre>
+
+<p>注意：其中 <code>[子目录名称]</code> 可以省略，如果省略，那么当前页面名称即显示为该 <code>markdown</code> 文件的一级标题。</p>
+<p>示例：</p>
+<p><code>nav:
+- Home: index.md
+- User Guide:
+    - Writing your docs: user-guide/writing-your-docs.md
+    - Styling your docs: user-guide/styling-your-docs.md
+- About:
+    - License: about/license.md
+    - Release Notes: about/release-notes.md</code></p>
+<p>如果采用的 <code>readthedocs</code> 主题，那么效果如下：</p>
+<p><img alt="多级目录" src="../多级目录.png" /></p>
+<p>这样一个多级目录就生成了！在该主题下，一级目录 <code>Home</code> 、 <code>User Guide</code> 、 <code>About</code> 也变为了不可选中状态。</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../附录/YAML 简介/" class="btn btn-neutral float-right" title="YAML 简介">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../主题配置/" class="btn btn-neutral" title="主题配置"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../主题配置/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../附录/YAML 简介/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

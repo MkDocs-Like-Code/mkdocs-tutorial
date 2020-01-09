@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>在技术文档写作中使用 Git - MkDocs 文档开发教程</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u5728\u6280\u672f\u6587\u6863\u5199\u4f5c\u4e2d\u4f7f\u7528 Git";
+    var mkdocs_page_input_path = "\u9644\u5f55\\Git.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MkDocs 文档开发教程</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">简介</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Mkdocs 入门</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../get-started/install-MkDocs/">安装 MkDocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../get-started/create-your-first-program/">创建你的第一个项目</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../get-started/deploy/">发布站点</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">MkDocs 进阶操作</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../MkDocs 进阶操作/主题配置/">主题配置</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../MkDocs 进阶操作/文档布局/">文档布局</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">附录</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../YAML 简介/">YAML 简介</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">在技术文档写作中使用 Git</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#git">在技术文档写作中使用 Git</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#git_1">Git 安装配置</a></li>
+        
+            <li><a class="toctree-l4" href="#git_2">Git 使用</a></li>
+        
+            <li><a class="toctree-l4" href="#git_3">Git 基本命令</a></li>
+        
+            <li><a class="toctree-l4" href="#git_4">Git 其他命令</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub Desktop/">在技术文档写作中使用 GitHub Desktop</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Markdown/">Markdown 基础语法</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MkDocs 文档开发教程</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>附录 &raquo;</li>
+        
+      
+    
+    <li>在技术文档写作中使用 Git</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="git">在技术文档写作中使用 Git</h1>
+<p>Git 是一个开源的分布式版本控制系统，因其版本控制和协同工作的特性，既可以托管代码，也可以托管文档。</p>
+<p>那么 Git 和 Github 的区别是什么呢？</p>
+<p>Git 是软件，它可在本地建立仓库，也可以在公司服务器、Github 服务器上建立仓库。</p>
+<p>Github 是采用了 Git 作为版本控制系统的网上代码托管平台。因此 Github 可以托管各种 Git 库，并提供一个 Web 界面，以可视化的形式记录个人和项目的历史。</p>
+<p>Git 相关知识推荐读者自行前往 <a href="https://www.runoob.com/git/git-tutorial.html">菜鸟教程</a> 学习，读者需要了解 <a href="https://www.runoob.com/git/git-workspace-index-repo.html">Git 工作区、暂存区和版本库</a> 的相关知识，此教程只介绍 Git 相关命令。</p>
+<h2 id="git_1">Git 安装配置</h2>
+<p>Git 支持 Linux、Solaris、Mac和 Windows 平台上运行。下载地址：</p>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>本文以 Windows 平台为例讲解各项命令。</p>
+<h2 id="git_2">Git 使用</h2>
+<p>Git 安装包自带 <code>Git Bash</code> （Git 命令行） 和 <code>Git GUI</code> （Git 图形界面），在当前项目文件夹空白处右击，会出现相关选项：</p>
+<p><img alt="右击" src="../right-menu.png" /></p>
+<p>在我的电脑上，<code>Git Bash</code> 有些许 bug ， 因此不推荐大家使用。</p>
+<p>如上图所示，可以自行安装 <code>Cmder</code> （<a href="https://cmder.net/）。">https://cmder.net/）。</a></p>
+<p><code>Cmder</code> 是一个增强的命令行工具，不仅可以使用windows下的所有命令，还可以使用linux的命令和shell命令。</p>
+<p>不过在这里笔者推荐使用 Windows 系统自带的命令行工具（cmd），快速打开当前文件夹路径的 cmd 方法如下：</p>
+<ul>
+<li>进入项目文件夹，点击该项目文件夹的路径，即会选中当前路径
+<img alt="快速打开 cmd " src="../cmd.png" /></li>
+<li>输入 cmd ，按回车键，即可打开
+<img alt="快速打开 cmd " src="../cmd1.png" /></li>
+</ul>
+<h2 id="git_3">Git 基本命令</h2>
+<h3 id="_1">克隆仓库</h3>
+<p>如果想克隆远程仓库至本地，我们需要知道远程仓库的地址，以本项目为例，本项目的 https 地址为 https://github.com/qin-xun/mkdocs-tutorial，进入该页面后，我们点击 <code>Clone or download</code> ，点击 <code>复制</code> icon，获得该 <code>git</code> 库的地址。</p>
+<p><img alt="git clone" src="../git-clone.png" /></p>
+<p>随后在 cmd 中输入克隆命令：</p>
+<pre><code>git clone [ git 仓库路径]
+</code></pre>
+
+<h3 id="_2">创建仓库</h3>
+<p>我们也可以在本地创建仓库，在合适位置新建文件夹，进入该文件夹，输入：</p>
+<pre><code>git init # 初始化版本库
+</code></pre>
+
+<p>即可创建本地仓库，这时候文件夹内会生成一个 <code>.git</code> 文件夹，这个文件夹是一个目录， Git 用它来跟踪、管理版本，不可随意改动。</p>
+<p>本地仓库一开始是没有和远程仓库关联的，我们还需要关联远程库。</p>
+<h3 id="_3">关联远程库</h3>
+<p>关联远程库当然需要关联你的 Github 帐号，与账号的关联通过 SSK Key 来实现，也就是要把公钥放到git服务器上，这样才有权限进行代码推送。</p>
+<p>要生成 SSH 公钥，在当前文件夹下的 cmd 中输入：</p>
+<pre><code>ssh-keygen -t rsa -C &quot;[你在 github 上注册时的邮箱]&quot;
+
+注意：英文状态下的 `&quot;` ， 不可省略。
+</code></pre>
+
+<p>按 <code>Enter</code> 后，会在 <code>C:\Users\Administrator\.ssh</code> 下生成一个 <code>id_rsa.pub</code> 文件，这里面记载的是我们的 SSH 公钥。</p>
+<p>我们用记事本打开，复制里面的内容。</p>
+<p>登录 Github ，点击 右上角账户头像 - Settings - SSH and GPG Keys - New SSH Key ：</p>
+<p><img alt="SSH" src="../SSH.png" /></p>
+<p>粘贴我们刚才复制的 SSH 公钥：</p>
+<p><img alt="SSH" src="../SSH1.png" /></p>
+<p>测试ssh key是否成功，输入：</p>
+<pre><code>ssh -T git@github.com
+yes
+</code></pre>
+
+<p>如果出现</p>
+<pre><code>You’ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
+
+<p>这就表明已成功连上 GitHub 。</p>
+<p>之后，我们可以使用如下命令，把本地仓库和远程仓库关联起来：</p>
+<pre><code>git remote add origin https://github.com/your-username/your-repo.git
+</code></pre>
+
+<h3 id="_4">添加内容并推送到远程</h3>
+<p>命令如下：</p>
+<pre><code>git add . # 添加文件到版本库（只是添加到缓存区），.代表添加文件夹下所有文件
+git commit -m &quot;[what you've done]&quot; # 提交到版本库，引号内为提交的备注，可以写你所做的工作
+git push -u origin master # 推送到远程库的 master 分支
+</code></pre>
+
+<p>由于远程库是空的，我们第一次推送 <code>master</code> 分支时，加上了-u参数，这样会把本地的 <code>master</code> 分支和远程的 <code>master</code> 分支关联起来，在以后的推送或者拉取时，就可以省略掉 <code>-u</code> ，简化命令。</p>
+<h2 id="git_4">Git 其他命令</h2>
+<ul>
+<li>查看远程仓库 <code>git remote -v</code>
+<br></li>
+<li>远端抓取 <code>git fetch</code></li>
+<li>与本地当前branch合并 <code>git merge origin master</code></li>
+<li>把远程库更新到本地 <code>git pull origin master</code> # 相当于
+<br></li>
+<li>
+<p>比较远程更新和本地版本库的差异 <code>git log master.. origin master</code></p>
+</li>
+<li>
+<p>想要在github上面删除，但又不想在本地删除文件
+<code>git rm -r --cached .idea  #--cached 不会把本地的.idea删除</code>
+<code>git commit -m 'delete .idea dir'</code>
+<code>git push -u origin master</code></p>
+</li>
+<li>
+<p>在仓库的当前分支（一般为 master ）下新建分支并切换到新建分支 <code>git checkout -b new-branch</code></p>
+</li>
+<li>
+<p>把本地的新分支推送到远程仓库并新建分支，并为远程的新建分支命名 <code>git push origin [name-of-local-new-branch]:[name-of-remote-new-branch]</code></p>
+</li>
+<li>
+<p>取消本地目录下关联的远程库 <code>git remote remove origin</code></p>
+</li>
+</ul>
+<p>注意： <code>origin</code> 统一指代远程仓库</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../GitHub Desktop/" class="btn btn-neutral float-right" title="在技术文档写作中使用 GitHub Desktop">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../YAML 简介/" class="btn btn-neutral" title="YAML 简介"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../YAML 简介/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../GitHub Desktop/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
