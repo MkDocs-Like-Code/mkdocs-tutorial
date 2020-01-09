@@ -1,16 +1,6 @@
-Markdown 是一种轻量级标记语言，通过简单的标记语法，它可以让文本内容具有一定的格式。MkDocs 的文件都是由 Markdown 语言编写的，如果你目前还没有接触过的话，我们提供了一个基础教程，并引用了一个简洁的 Markdown 编辑器，你可以跟着教程边学边实践。
+Markdown 是一种轻量级标记语言，通过简单的标记语法，它可以让文本内容具有一定的格式。MkDocs 的文件都是由 Markdown 语言编写的，如果你目前还没有接触过的话，我们提供了一个基础教程。
 
-本页面中内嵌的 Markdown 编辑器来自于 **CSDN 博主「不敲代码的攻城狮」的原创文章**，[原文链接在此](https://blog.csdn.net/qq_34845394/article/details/85130234)。
-
-因为这一个关于 MkDocs 的技术文档， Markdown 语法并不是核心内容，所以这里只提供基础语法的教学，帮助大家快速上手。如果想要学习更多 Markdown 标记语法，可以去 [Markdown - 语法说明](http://www.markdown.cn/) 学习；如果想要试试功能更加全面、操作更加便捷的 Markdown 编辑器，[MdEditor](https://www.mdeditor.com/) 是个不错的选择。
-
-## Markdown 编辑器
-
-
-
-下面是 Markdown 基础语法 ，你可以在上文提供的编辑器里练习，在左边的编辑框里撰写 Markdown 标记语言，右边的编辑框立即就会显示出相应文本。
-
----
+因为这一个关于 MkDocs 的技术文档， Markdown 语法并不是核心内容，所以这里只提供基础语法的教学，帮助大家快速上手。如果想要学习更多 Markdown 标记语法，可以去 [Markdown - 语法说明](http://www.markdown.cn/) 学习；如果想要试试功能全面、操作便捷的 Markdown 编辑器，[MdEditor](https://www.mdeditor.com/) 是个不错的选择。建议打开 [MdEditor](https://www.mdeditor.com/)，一边操作一边学习。
 
 ## 标题
 语法
