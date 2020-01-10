@@ -46,6 +46,6 @@ $ tree
 
 如果采用的 `readthedocs` 主题，那么效果如下：
 
-![多级目录](多级目录.png)
+![多级目录](multi-dir.png)
 
 这样一个多级目录就生成了！在该主题下，一级目录 `Home` 、 `User Guide` 、 `About` 也变为了不可选中状态。
