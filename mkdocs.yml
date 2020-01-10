@@ -6,16 +6,16 @@ nav:
   - 简介: index.md
   - Mkdocs 入门:
     - 安装 MkDocs: get-started/install-MkDocs.md
-    - 创建你的第一个项目: get-started/create-your-first-program.md
+    - 创建项目: get-started/create-program.md
     - 发布站点: get-started/deploy.md
   - MkDocs 进阶操作:
     - MkDocs 进阶操作/主题配置.md
     - MkDocs 进阶操作/文档布局.md
   - 附录:
-    - YAML 简介: 附录/YAML 简介.md
-    - 在技术文档写作中使用 Git: 附录/Git.md
-    - 在技术文档写作中使用 GitHub Desktop: 附录/GitHub Desktop.md
-    - Markdown 基础语法: 附录/Markdown.md
+    - YAML 简介: appendix/YAML 简介.md
+    - 在技术文档写作中使用 Git: appendix/Git.md
+    - 在技术文档写作中使用 GitHub Desktop: appendix/GitHub Desktop.md
+    - Markdown 基础语法: appendix/Markdown.md
 
 markdown_extensions:
   - toc:
