@@ -12,7 +12,6 @@ nav:
     - MkDocs-advanced-operations/theme-configuration.md
     - MkDocs-advanced-operations/files-layout.md
   - 附录:
-    - YAML 简介: appendix/YAML 简介.md
     - 在技术文档写作中使用 Git: appendix/Git.md
     - 在技术文档写作中使用 GitHub Desktop: appendix/GitHub Desktop.md
     - Markdown 基础语法: appendix/Markdown.md
