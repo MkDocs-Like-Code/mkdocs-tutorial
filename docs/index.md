@@ -3,6 +3,7 @@ MkDocs 是一个用于创建项目文档的静态站点生成器。文档源码�
 本教程的结构如下：
 
 - MkDocs 简介
+
 - MkDocs 快速入门
   - 安装 MkDocs
   - 创建新的 MkDocs 项目
@@ -15,6 +16,7 @@ MkDocs 是一个用于创建项目文档的静态站点生成器。文档源码�
     - readthedocs
       - Gitbash
       - GitHub Desktop
+
 - MkDocs 进阶操作
   - 文档布局
     - 初始结构
@@ -22,6 +24,7 @@ MkDocs 是一个用于创建项目文档的静态站点生成器。文档源码�
   - 主题配置
     - 更改主题
     - 自定义主题
+
 - 附录
   - Git
   - GitHub Desktop

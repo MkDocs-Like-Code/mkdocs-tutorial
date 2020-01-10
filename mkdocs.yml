@@ -9,8 +9,8 @@ nav:
     - 创建项目: get-started/create-program.md
     - 发布站点: get-started/deploy.md
   - MkDocs 进阶操作:
-    - MkDocs-advanced-operations/theme-configuration.md
-    - MkDocs-advanced-operations/files-layout.md
+    - 主题配置: MkDocs-advanced-operations/theme-configuration.md
+    - 文档布局: MkDocs-advanced-operations/files-layout.md
   - 附录:
     - 在技术文档写作中使用 Git: appendix/Git.md
     - 在技术文档写作中使用 GitHub Desktop: appendix/GitHub Desktop.md
