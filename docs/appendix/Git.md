@@ -112,7 +112,7 @@ git remote add origin https://github.com/your-username/your-repo.git
 ```
 git add . # 添加文件到版本库（只是添加到缓存区），.代表添加文件夹下所有文件
 git commit -m "[what you've done]" # 提交到版本库，引号内为提交的备注，可以写你所做的工作
-git push -u origin master # 推送到远程库的 master 分支
+git push -u origin master # 推送到远程库的 master 分支， `origin` 表示“远程库”的概念，与本地库相对
 ```
 
 由于远程库是空的，我们第一次推送 `master` 分支时，加上了-u参数，这样会把本地的 `master` 分支和远程的 `master` 分支关联起来，在以后的推送或者拉取时，就可以省略掉 `-u` ，简化命令。
