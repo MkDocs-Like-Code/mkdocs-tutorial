@@ -1,3 +1,5 @@
+# 安装 MkDocs
+
 安装 MkDocs 需要 Python 和 Python package manager pip，如果你已经安装了 Python 和 Python package manager pip，可以打开命令提示符执行以下命令安装 MkDocs:
 ```
 pip install mkdocs

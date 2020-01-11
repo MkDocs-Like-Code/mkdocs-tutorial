@@ -1,6 +1,9 @@
 site_name: MkDocs 文档开发教程
-theme: readthedocs
-#theme: rtd-dropdown
+theme: 
+  name: rtd-dropdown
+  navigation_depth: 1
+  collapse_navigation: false
+  titles_only: true
 
 nav:
   - 简介: index.md
@@ -18,6 +21,8 @@ nav:
 
 markdown_extensions:
   - toc:
+
+
 
 
     

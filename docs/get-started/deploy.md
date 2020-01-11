@@ -1,4 +1,6 @@
-# 使用 Github Pages 发布
+# 发布站点
+
+## 使用 Github Pages 发布
 这里将使用 GitHub Desktop 做演示，电脑里没有 GitHub Desktop 的小伙伴可以[点此](https://desktop.github.com/)自行下载。
 
 首先，我们新建一个仓库，`Name`为`learn-mkdocs`，`Local path`为仓库存储路径：
@@ -25,8 +27,7 @@
 
 ![图片](deploy6.png)
 
-# 使用 Read the Docs 发布
-
+## 使用 Read the Docs 发布
 
 使用 Read the Docs 发布前，请确保`theme`为`readthedocs`，不然可能无法成功构建网页。如果不了解如何设置`theme`，可以在`MkDocs 进阶操作->主题配置`里学习。如果`theme`设置没有问题，就请继续往下看吧。
 

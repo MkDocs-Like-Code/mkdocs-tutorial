@@ -1,3 +1,5 @@
+# 主题配置
+
 ## 更改主题
 
 更改主题的语法格式为 `theme: [主题名]` 。
@@ -109,50 +111,50 @@ theme: amelia
 theme: cosmo
 ```
 
-#### Amelia
+##### Amelia
 
 ![Amelia](./bootswatch/amelia.png)
 
-#### Cerulean
+##### Cerulean
 
 ![Cerulean](./bootswatch/cerulean.png)
 
-#### Cosmo
+##### Cosmo
 
 ![Cosmo](./bootswatch/cosmo.png)
 
-#### Cyborg
+##### Cyborg
 
 ![Cyborg](./bootswatch/cyborg.png)
 
-#### Flatly
+##### Flatly
 
 ![Flatly](./bootswatch/flatly.png)
 
-#### Journal
+##### Journal
 
 ![Journal](./bootswatch/journal.png)
 
-#### Readable
+##### Readable
 
 ![Readable](./bootswatch/readable.png)
 
-#### Simplex
+##### Simplex
 
 ![Simplex](./bootswatch/simplex.png)
 
-#### Slate
+##### Slate
 
 ![Slate](./bootswatch/slate.png)
 
-#### Spacelab
+##### Spacelab
 
 ![Spacelab](./bootswatch/spacelab.png)
 
-#### United
+##### United
 
 ![United](./bootswatch/united.png)
 
-#### Yeti
+##### Yeti
 
 ![Yeti](./bootswatch/yeti.png)

@@ -1,8 +1,11 @@
+# 在技术文档写作中使用 GitHub Desktop
+
 GitHub Desktop 可以很方便地管理本地和远程仓库，如果你刚刚接触 GitHub、 同时对 Git Bash 等命令行工具又很陌生的话，GitHub Desktop 就是一个非常适合的选择了。
 
 开始学习本教程之前，需要先注册 GitHub 账号，并安装 GitHub Desktop，注册和安装过程就不过多赘述了，小伙伴们可以自行前往官网[注册账号](https://github.com/)、[下载 GitHub Desktop](https://desktop.github.com/)。
 
 ## 创建本地仓库
+
 首先打开 GitHub Desktop，点击左上角`File`->`New repository`。
 
 ![图片](new.png)
@@ -19,6 +22,7 @@ GitHub Desktop 可以很方便地管理本地和远程仓库，如果你刚刚�
 
 
 ## 提交本地改动到远程仓库
+
 本地仓库有了任何改动，比如新建了文件、文件有了更改，又或者删除了不需要的文件，GitHub Desktop 都可以识别并显示出来，你可以选择将这些改动提交到远程仓库，即提交到云端。下面我们来做个演示：
 
 首先，在本地仓库里新建一个文件，这里我创建了一个`test.txt`文件：
@@ -38,6 +42,7 @@ GitHub Desktop 可以很方便地管理本地和远程仓库，如果你刚刚�
 此时，到自己的 [GitHub 主页](https://github.com/)可以查看到最新推送上去的仓库。
 
 ## 克隆远程仓库到本地
+
 `Clone`可以简单地理解为将储存在云端、同时本地又没有的远程仓库下载到本地。方法为：打开 GitHub Desktop，点击`File`->`Clone repository`。
 
 ![图片](new7.png)
@@ -47,6 +52,7 @@ GitHub Desktop 可以很方便地管理本地和远程仓库，如果你刚刚�
 ![图片](new8.png)
 
 ## 拉取远程改动到本地仓库
+
 如果在远程仓库更新了东西，但是还没有同步到本地仓库，也可以用 GitHub Desktop 进行拉取同步。
 
 在`Current repository`选择你想要同步的仓库，点击右上角`Fetch origin`。
@@ -56,7 +62,3 @@ GitHub Desktop 可以很方便地管理本地和远程仓库，如果你刚刚�
 如果远程仓库有更新的话，会显示出来，如下图，点击`Pull origin`即可将远程更新的内容下载到本地。
 
 ![图片](new10.png)
-
-
-
-
