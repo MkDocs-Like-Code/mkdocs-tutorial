@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>文档布局 - MkDocs 文档开发教程</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
@@ -45,77 +46,143 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
     <a class="" href="../..">简介</a>
-	    </li>
+  </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Mkdocs 快速入门</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Mkdocs 快速入门</span>
-    <ul class="subnav">
-                <li class="">
-                    
+
+
+  <li class="navtree toctree-l2 inactive">
     <a class="" href="../../get-started/install-MkDocs/">安装 MkDocs</a>
-                </li>
-                <li class="">
-                    
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
     <a class="" href="../../get-started/create-program/">创建项目</a>
-                </li>
-                <li class="">
-                    
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
     <a class="" href="../../get-started/deploy/">发布站点</a>
-                </li>
-    </ul>
-	    </li>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">MkDocs 进阶操作</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">MkDocs 进阶操作</span>
-    <ul class="subnav">
-                <li class="">
-                    
+
+
+  <li class="navtree toctree-l2 inactive">
     <a class="" href="../theme-configuration/">主题配置</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">文档布局</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#_1">初始结构</a></li>
-    
-
-    <li class="toctree-l3"><a href="#_2">设置多级目录</a></li>
-    
-
-    </ul>
-                </li>
-    </ul>
-	    </li>
+  </li>
+        
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">附录</span>
-    <ul class="subnav">
-                <li class="">
-                    
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        文档布局
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_2">初始结构</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_3">设置多级目录</a>
+        </li>
+    
+    </ul>
+  </li>
+
+
+  
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">附录</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
     <a class="" href="../../appendix/Git/">在技术文档写作中使用 Git</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../appendix/GitHub Desktop/">在技术文档写作中使用 GitHub Desktop</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../appendix/Markdown/">Markdown 基础语法</a>
-                </li>
-    </ul>
-	    </li>
+  </li>
+        
           
-        </ul>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../appendix/GitHub Desktop/">在技术文档写作中使用 GitHub Desktop</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../appendix/Markdown/">Markdown 基础语法</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
       </div>
       &nbsp;
     </nav>
@@ -151,7 +218,8 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="_1">初始结构</h2>
+                <h1 id="_1">文档布局</h1>
+<h2 id="_2">初始结构</h2>
 <p>在项目文件夹中，初始文档包括：</p>
 <ul>
 <li>
@@ -170,7 +238,7 @@
 </code></pre>
 
 <p><code>index</code> 即为默认的项目主页。</p>
-<h2 id="_2">设置多级目录</h2>
+<h2 id="_3">设置多级目录</h2>
 <p>我们也可以根据需要生成多级目录，多级目录也要在 <code>mkdocs.yml</code> 中配置。多级目录的语法格式如下：</p>
 <pre><code>- [一级目录名称]:
     - [子目录名称]:[文件路径/文件名.md]
