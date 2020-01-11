@@ -4,7 +4,7 @@ theme: readthedocs
 
 nav:
   - 简介: index.md
-  - Mkdocs 入门:
+  - Mkdocs 快速入门:
     - 安装 MkDocs: get-started/install-MkDocs.md
     - 创建项目: get-started/create-program.md
     - 发布站点: get-started/deploy.md
